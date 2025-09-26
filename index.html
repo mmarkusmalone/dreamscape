@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dream Graph Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        margin: 0;
+        background: #111;
+        color: white;
+        font-family: sans-serif;
+        overflow: hidden; /* let Three.js canvas fill window */
+      }
+      header {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+      }
+      textarea {
+        width: 400px;
+        height: 100px;
+        margin-top: 10px;
+      }
+      button {
+        margin-top: 10px;
+        padding: 6px 12px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dream Space</h1>
+      <textarea id="dreamInput" placeholder="Enter your dream..."></textarea><br />
+      <button onclick="submitDream()">Submit</button>
+    </header>
+
+    <!-- Your Three.js app entrypoint -->
+    <script type="module" src="./src/source.js"></script>
+  </body>
+</html>
